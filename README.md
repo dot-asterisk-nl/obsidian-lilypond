@@ -1,6 +1,6 @@
 # Obsidian Lilypond Plugin
 
-By Stardust. I have been given full authorization to maintain this project and do not own complete rights. Full rights belong to them.
+By Stardust ✨. I have been given full authorization to maintain this project and do not own complete rights. Full rights belong to them.
 The added software license may not be correct, please use at your own discretion.
 
 ## What is it?
