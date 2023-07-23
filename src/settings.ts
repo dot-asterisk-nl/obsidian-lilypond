@@ -1,4 +1,4 @@
-import LilypondPlugin from "main";
+import LilypondPlugin from "src/main";
 import { App, PluginSettingTab, Setting } from "obsidian";
 
 export class SettingsTab extends PluginSettingTab {

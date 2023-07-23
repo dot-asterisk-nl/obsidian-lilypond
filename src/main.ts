@@ -7,8 +7,10 @@ interface LilypondPluginSettings {
 	path: string;
 }
 
+const DEFAULT_LILY_PATH =  "/usr/local/bin/lilypond";
+
 const DEFAULT_SETTINGS: Partial<LilypondPluginSettings> = {
-	path: "/usr/local/bin/lilypond",
+	path: "",
 };
 
 export default class LilypondPlugin extends Plugin {
@@ -19,7 +21,7 @@ export default class LilypondPlugin extends Plugin {
 		this.addSettingTab(new SettingsTab(this.app, this));
 
 		this.registerMarkdownCodeBlockProcessor("lily", (source, el) => {
-			render(source, this.settings.path, el);
+			render(source, this.settings.path || DEFAULT_LILY_PATH, el);
 		})
 	}
 
